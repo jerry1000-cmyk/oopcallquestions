@@ -1,0 +1,4 @@
+/*
+Write a program demonstrating multiple catch blocks for different data
+types.
+*/

@@ -7,7 +7,7 @@ them.
 #include <string>
 using namespace std;
 
-fstream record("records.txt",ios::in | ios::out);
+fstream record("records.txt",ios::in | ios::out);//The file will not be automatically created 
  
 class Student{
   public:
@@ -43,7 +43,7 @@ int main(){
    record.seekg(0,ios::beg);
    /*THIS IS VERY IMPORTANT AS AFTER YOU WRITE THE FILE THE POINTER IS ALDREADY AT END HENCE 
    NOTHHING GETS PRINTED TO AVOID THAT USE THIS TO RESET THE POINTER TO START*/
-   
+
    Student::getdata(record);
 
     record.close();

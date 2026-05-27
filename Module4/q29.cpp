@@ -17,7 +17,8 @@ ofstream file2{"sample3.txt"};
         file2<<line<<endl;
     }
  }
-
+file1.close();
+file2.close();
 };
 
 int main(){
